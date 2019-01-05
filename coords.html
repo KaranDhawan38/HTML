@@ -1,0 +1,25 @@
+<html onmousemove="fun(event)">
+<body>
+<p id="res" align="center"></p>
+<marquee direction="up" loop="2">
+<fieldset>
+<legend>karan</legend>
+<form><ol style="list-style:lower-roman">
+<li><input type="radio" name="food">hello<br>
+<li><input type="checkbox" name="food">helloh<br>
+<li><input type="checkbox" name="food">hellogfh<br>
+<li><input type="checkbox" name="food">helloghgh
+</ol>
+</form>
+</fieldset>
+</marquee>
+<script>
+function fun(event)
+ {
+   var x=event.clientX;
+   var y=event.clientY;
+   document.getElementById('res').innerHTML="x="+x+" y="+y;
+ }
+</script>
+</body>
+</html>
